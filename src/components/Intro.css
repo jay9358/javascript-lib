@@ -1,0 +1,91 @@
+.Intro-container{
+    position: absolute;
+    top:11rem    ;
+    width: 92%;
+    height: 23rem;
+    left: 5rem;
+    justify-content: space-around;
+    display:flex;
+    align-items: center;
+ 
+}
+.name{
+    position: relative;
+    height: 22rem;
+    width: 50%;
+   
+   align-items: center;
+   font-family: gilory;
+}
+
+.name h1{
+    position: relative;
+    text-align: left;
+    font-size: 4.5rem;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+    word-spacing: 2px;  
+}
+.jay{
+    
+    -webkit-text-stroke: 1px white;
+}
+.name h2{
+    display: flex;
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: white;
+    font-size: 2.4rem;
+  
+}
+.Into{
+    display: flex;
+    width: 100%;
+   
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: white;
+    font-size: 2.4rem;
+  
+}
+@font-face {
+    font-family: gilory;
+    src: url("./Gilroy-SemiBold.ttf");
+}
+.containerr {
+    position: relative;
+    right: 8%;
+    top:-1px;
+
+   
+   
+   
+}
+.social-icons{
+    display: flex;
+}
+
+.social-icons i{
+    font-size: 2.2rem;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 35px;
+}
+.social-icons i:hover{
+    font-size: 2.3rem;
+}
+
+#inner{
+    width: 100%;
+    height:fit-content;
+    border-radius: 40px; 
+}
+
+
