@@ -8,13 +8,14 @@ function App() {
   return (
     
  <>
-<Intro></Intro>
+
 
  <div className="Nav-container"  >
   <div className="Navbar">
     <Nav></Nav>
   </div>
 </div>
+<Intro></Intro>
 
 
  </>

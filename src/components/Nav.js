@@ -29,11 +29,11 @@ function Nav() {
     <>
 
     <nav className="nav">
-      <a href="#" className="nav-item is-active" active-color="orange">Home</a>
-      <a href="#" className="nav-item" active-color="green">About</a>
-      <a href="#" className="nav-item" active-color="blue">Projects</a>
+      <a href="/" className="nav-item is-active" active-color="orange">Home</a>
+      <a href="/" className="nav-item" active-color="green">About</a>
+      <a href="/" className="nav-item" active-color="blue">Projects</a>
       
-      <a href="#" className="nav-item" active-color="rebeccapurple">Contact</a>
+      <a href="/" className="nav-item" active-color="rebeccapurple">Contact</a>
       <span className="nav-indicator"></span>
     </nav>
     </>
