@@ -8,7 +8,7 @@ function Intro() {
   useEffect(() => {
 
     const typed = new Typed(typingTextRef.current, {
-      strings: ["&nbspfrontend development", "&nbsp;backend development", "&nbsp;web designing", "&nbsp;android development", "&nbsp;web development"],
+      strings: ["&nbsp;frontend development", "&nbsp;backend development", "&nbsp;web designing", "&nbsp;android development", "&nbsp;web development"],
       loop: true,
       typeSpeed: 50,
       backSpeed: 25,
