@@ -28,10 +28,7 @@ function Intro() {
         nametext.style.opacity=1;
         Into.style.opacity=1;
       }
-      else{
-        nametext.style.opacity=0;
-        Into.style.opacity=0;
-      }
+   
     });
     return () => {
       typed.destroy(); // Clean up the Typed instance when the component unmounts
