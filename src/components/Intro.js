@@ -25,6 +25,7 @@ function Intro() {
       if(scrollpos<90){
         nametext.style.left = scrollpos + 'px';
         Into.style.right=scrollpos+'px';
+        nametext.style.opacity=1;
         Into.style.opacity=1;
       }
       else{
