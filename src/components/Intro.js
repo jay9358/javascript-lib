@@ -44,7 +44,7 @@ function Intro() {
           <h1 className="nametext">
             I'm <span className="jay">Jay</span>
           </h1>
-          <div className="Into"><h2>I am Into   </h2> <span ref={typingTextRef} className="typing-text" style={{color:"pink"}}></span></div>
+          <div className="Into"><h2>I am Into   </h2> <div ref={typingTextRef} className="typing-text" style={{color:"pink"}}></div></div>
           <button type="button" class="btn btn-dark btn-lg mb-3">About Me</button>
           <div className="social-icons">
           <i class="fa-brands fa-linkedin  mx-2 " style={{color: "#6c757d"}}></i>
