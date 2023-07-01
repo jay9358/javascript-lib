@@ -143,5 +143,8 @@
         height: 9vw;
 
         font-size: 6vw;}
+        .social-icons:hover{
+            font-size: 7.5vw;
+        }
      
 }
