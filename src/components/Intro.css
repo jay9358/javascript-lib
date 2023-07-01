@@ -1,8 +1,7 @@
 .Intro-container{
-    position: absolute;
-    top:11rem    ;
-    width: 90%;
-    height: 23rem;
+    
+    width: 100%;
+    height: 40rem;
     left: 5rem;
     justify-content: space-around;
     display:flex;
@@ -11,9 +10,10 @@
 }
 .name{
     position: relative;
+    left: 5rem;
     height: 22rem;
     width: 50%;
-   
+   font-size: 3vw;
    align-items: center;
    font-family: gilory;
 }
@@ -21,7 +21,7 @@
 .name h1{
     position: relative;
     text-align: left;
-    font-size: 4.5rem;
+    font-size: 4.9vw;
     margin-top: 4px;
     margin-bottom: 4px;
     letter-spacing: 1px;
@@ -37,18 +37,18 @@
     margin-top: 4px;
     margin-bottom: 4px;
     color: white;
-    font-size: 2.2rem;
+    font-size: 2.7vw;
   
 }
 .Into{
     display: flex;
-    width: 150%;
-   
+    overflow-x: hidden;
+    
     position: relative;
     margin-top: 4px;
     margin-bottom: 4px;
     color: white;
-    font-size: 2.4rem;
+    font-size: 2.7vw;
   
 }
 @font-face {
@@ -60,19 +60,11 @@
     right: 6%;
     top:-1px;
     
-   
+   justify-content: center;
    
    
 }
-@media (max-width:1040px) {
-    .containerr{
-        right:0%;
-    }
-    .Into{
-        width: 200%;
-        right: 2rem;
-    }
-}
+
 .social-icons{
     display: flex;
 }
@@ -97,4 +89,59 @@
     border-radius: 40px; 
 }
 
+@media (max-width:500px){
+    .name h1{
+        font-size: 8vw;
+    }
+}
+@media (max-width:700px){
+    .Intro-container{
+       
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        
+    }
+    .name{
+        width: 100%;
+        font-size: 6vw;
+        left: 0;
+        height: 14rem;
+        left: 2rem;
+    }
 
+    .name h2{
+        font-size: 5.5svw;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+    }
+    .Into{
+        
+        width: 100%;
+        font-size: 5.3vw;
+    }
+    .btn{
+        font-size: 13px;
+        padding: 9px;
+    }
+    .containerr{
+       justify-content: center;
+       justify-items: center;
+    }
+    #inner{
+        width: 65%;
+        position: relative;
+        left: 5rem;
+    }
+
+    .social-icons{
+      
+    }
+    .social-icons i{
+        width: 9vw;
+        height: 9vw;
+
+        font-size: 6vw;}
+     
+}
