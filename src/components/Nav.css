@@ -4,15 +4,19 @@
   box-sizing: border-box;
 }
 .Navbar{
-  position: relative;
+
   top: 20%;
 
   z-index: 2;
   overflow-y: hidden;
  
 }
+.btn{
+  display: flex;
+}
 .Nav-container{
-
+  position: absolute;
+  z-index: 2;
   justify-content: center;
   display: flex;
  z-index: 2;
@@ -22,7 +26,7 @@
 }
 body {
 
-  height: 100vh;
+
   width: 100%;
  
   
@@ -39,7 +43,7 @@ body {
   background:white;
 padding: 0 20px;
   border-radius: 40px;
-
+  z-index: 3;
 }
 
 .nav-item {

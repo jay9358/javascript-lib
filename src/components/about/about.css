@@ -1,0 +1,15 @@
+.about_container{
+    display: flex;
+    position:absolute;
+z-index: 3;
+    color: white;
+    justify-content: center;
+    height: 100vh;
+    transform: translateX(100%);
+    width: 100vw;
+    
+}
+.about_container h1{
+    font-size: 5rem;
+   
+}

@@ -37,7 +37,8 @@ function Intro() {
 
   return (
     <>
-      <div className="Intro-container">
+      <div className="Intro-container section" >
+        
         <div className="name">
           <h1>Hi There,</h1>
           <h1 className="nametext">

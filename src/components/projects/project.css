@@ -1,0 +1,14 @@
+.project_container{
+    display: flex;
+    width:300%;
+    position: absolute;
+    transform: translateX(12%);
+}
+.projects_container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 3;
+}
