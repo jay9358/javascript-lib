@@ -10,18 +10,50 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Projects from './components/projects/Projects';
+import Contact from './components/Contact/Contact';
 
 function App() {
   const [loader, setLoader] = useState(true);
-  
+  const vertical=()=>{
+    gsap.registerPlugin(ScrollTrigger);
+    const t2 = gsap.timeline();
+    t2.to(".containerr",5,{y:-window.innerHeight})
+    ScrollTrigger.create({
+      animation: t2,
+      trigger: ".w",
+      start: "center",
+      end: "+=4001",
+      scrub: true,
+      pin: true
+    });
+
+  }
+  const scrollAnimation = () => {
+    gsap.registerPlugin(ScrollTrigger);
+    const t1 = gsap.timeline();
+    t1.to(".w", 1, { x: -window.innerWidth})
+    ScrollTrigger.create({
+      animation: t1,
+      trigger: ".w",
+      start: "top",
+      end: "+=4000",
+      scrub: true,
+      pin: true
+    });
+  }; 
+
   useEffect(() => {
+  scrollAnimation();
     const timeout = setTimeout(() => {
       setLoader(false);
     }, 4000);
     return () => clearTimeout(timeout);
+   
   }, []);
 
 
+  
 
 
   return (
@@ -38,16 +70,17 @@ function App() {
 }
 function Start(){
   const [init, setInit] = useState(false);
+ 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
     }).then(() => {
       setInit(true);
     });
-    scrollAnimation();
+    
   }, []);
   
-  
+
   const particlesLoaded = (container) => {
     console.log(container);
   };
@@ -126,28 +159,7 @@ function Start(){
     }),
     [],
   );
-  const scrollAnimation = () => {
-    gsap.registerPlugin(ScrollTrigger);
 
-    const content = document.querySelector('.content');
-    
-    // Check if the content width exceeds the window width
-   
-      gsap.to(content, {
-        xPercent: -100 * (content.length - 1),
-        ease: 'none',
-        scrollTrigger: {
-          trigger: '.wrapper',
-          pin: true,
-          scrub: 0.5,
-          snap: 1 / (content.length - 1),
-          start: 'top top',
-          end: 3000,
-        },
-      });
-  
-    
-  };
 
   return(
     <>
@@ -162,11 +174,12 @@ function Start(){
 
   </div>
 </div>
-<div className="w content">
+    <div className="w">
         <Intro></Intro>
         <About></About>
-        <Project></Project>
-      </div>
+        <Contact></Contact>
+        </div>
+   
 
     </>
   )

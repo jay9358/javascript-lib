@@ -1,13 +1,15 @@
 .Intro-container{
     z-index: 2;
-    position: absolute;
+    position: relative;
     width: 100vw;
-    height: 40rem;
+    height: 90vh;
     left: 5rem;
     justify-content: space-around;
     display:flex;
+    flex-shrink: 0;
     align-items: center;
- 
+    transform: translate(-3%);
+    
 }
 .name{
     position: relative;
@@ -60,7 +62,7 @@
     position: relative;
     right: 6%;
     top:-1px;
-    
+    display: flex;
    justify-content: center;
    
    
@@ -100,7 +102,7 @@
        
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 90vw;
         
     }
     .name{
@@ -133,7 +135,7 @@
     #inner{
         width: 65%;
         position: relative;
-        left: 5rem;
+       
     }
 
     .social-icons{
@@ -148,4 +150,12 @@
             font-size: 7.5vw;
         }
      
+}
+.strip{
+    position: absolute;
+    height: 1.5rem;
+    width: 101vw;
+    background-color: rgba(0, 0, 0, 0.592);
+    left: -3.4rem;
+    top: 51%;
 }

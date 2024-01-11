@@ -1,15 +1,48 @@
 .about_container{
-    display: flex;
-    position:absolute;
-z-index: 3;
-    color: white;
-    justify-content: center;
+    position: relative;
+    
     height: 100vh;
-    transform: translateX(100%);
     width: 100vw;
+    display: flex;  
+    flex-shrink:0;
+ 
+    
+    
+    
+}  
+.about_container h1{
+    position: absolute;
+    font-size: 10rem;
+    top: 30%;
+    color: rgb(103, 255, 130);
+    left: 10%;
+    
+} 
+.cartoon{
+    position: absolute;
+    top: 20%;
+    left: 28%;
+    
+    
+   
+}
+.cartoon img{
+    width: 35rem;
+    opacity: 90%;
     
 }
-.about_container h1{
-    font-size: 5rem;
-   
+.strip2{
+    position: relative;
+    height: 100vh;
+    width: 2rem;
+    background-color: black;
+    left: -3rem;
+}
+.about1{
+    width: 50%;
+    background-color: rgba(0, 200, 255, 0.567);
+}
+.about2{
+    width: 50%;
+    background-color: rgba(255, 132, 0, 0.337);
 }

@@ -1,14 +1,24 @@
 .project_container{
-    display: flex;
-    width:300%;
-    position: absolute;
-    transform: translateX(12%);
+    
+    width:100vw;
+    
 }
 .projects_container{
     display: flex;
+    position: absolute;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
+    flex-shrink: 0;
 
     z-index: 3;
+}
+.section1{
+    transform: translate(0% ,376%);
+}
+.section2{
+    transform: translate(0,120%);
+}
+.section3{
+    transform: translate(-100% ,72%);
 }

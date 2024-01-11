@@ -1,7 +1,18 @@
-/* ---- reset ---- */ body{ font:normal 75% Arial, Helvetica, sans-serif;  } canvas{ display: block; vertical-align: bottom; background-repeat: no-repeat; background-size: cover; background-image: url("https://img.freepik.com/free-vector/blurred-purple-background_1107-140.jpg");} /* ---- particles.js container ---- */
+/* ---- reset ---- */ body{ height: 100vh;} canvas{ display: block; vertical-align: bottom; background-repeat: no-repeat; background-size: cover; background-image: url("https://img.freepik.com/free-vector/blurred-purple-background_1107-140.jpg");} /* ---- particles.js container ---- */
 .w{
-width: 500vw;
-height: 90vh;
-overflow-y: hidden;
-overflow-x: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.contact{
+    height: 100vh;
+    width: 100vw;
+   
+}
+.c{
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-shrink:0;
 }
