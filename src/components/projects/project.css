@@ -44,8 +44,8 @@
     left: 36rem; */
     display: flex;
     flex-direction: column;
-    justify-content: start;
-  gap: 2rem;
+    justify-content: flex-start;
+    gap: 2rem;
     flex-wrap: wrap;
   }
   
