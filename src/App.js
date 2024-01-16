@@ -16,10 +16,12 @@ import Contact from './components/Contact/Contact';
 function App() {
   const [loader, setLoader] = useState(true);
  
-  const scrollAnimation = () => {
-   
-    
-    
+ 
+
+  useEffect(() => {
+    if(!loader){
+    gsap.registerPlugin(ScrollTrigger);
+
     const t1 = gsap.timeline();
     t1.to(".w", { x: -window.innerWidth *4, duration: 2 });
   
@@ -33,6 +35,7 @@ function App() {
     });
   
 
+
     gsap.to(".Into",{
       fontSize:'1vw',
       top:'-16rem',
@@ -40,7 +43,7 @@ function App() {
       scrollTrigger:{
         trigger: ".Into",
       start: "top top",
-      end: "801",
+      end: "800",
       scrub: 0.5
       }
     })
@@ -110,9 +113,8 @@ function App() {
         trigger:'.containerr',
         duration:10,
         start:'top bottom',
-        end:'+=1201',
-        scrub:0.5
-
+        end:'+=801',
+        scrub:0.55
       }
     })
     gsap.to('.social-icons',{
@@ -140,21 +142,19 @@ function App() {
 
       }
     })
+  }
 
   
 
 
-  }; 
+ 
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-  scrollAnimation();
     const timeout = setTimeout(() => {
       setLoader(false);
     }, 4000);
     return () => clearTimeout(timeout);
    
-  }, []);
+  }, [loader]);
 
 
   
@@ -176,6 +176,7 @@ function Start(){
   const [init, setInit] = useState(false);
  
   useEffect(() => {
+  
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
     }).then(() => {
