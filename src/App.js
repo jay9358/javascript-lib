@@ -5,7 +5,7 @@ import Nav from './components/Nav';
 import { useState,useEffect , useMemo} from 'react';
 import Preloader from './components/Preloader';
 import About from './components/about/about';
-import Project from './components/projects/Project';
+
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { gsap } from 'gsap';
@@ -15,20 +15,7 @@ import Contact from './components/Contact/Contact';
 
 function App() {
   const [loader, setLoader] = useState(true);
-  const vertical=()=>{
-    gsap.registerPlugin(ScrollTrigger);
-    const t2 = gsap.timeline();
-    t2.to(".containerr",5,{y:-window.innerHeight})
-    ScrollTrigger.create({
-      animation: t2,
-      trigger: ".w",
-      start: "center",
-      end: "+=4000  ",
-      scrub: true,
-      pin: true
-    });
 
-  }
   const scrollAnimation = () => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -190,6 +177,7 @@ function Start(){
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
     }).then(() => {
+      
       setInit(true);
     });
     
@@ -285,7 +273,7 @@ function Start(){
       />
      <div className="Nav-container"  >
   <div className="Navbar">
-    <Nav></Nav>
+    <Nav count={init}></Nav>
 
   </div>
 </div>
