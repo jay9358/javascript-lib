@@ -3,11 +3,7 @@
     display: flex;
     flex-wrap: nowrap;
 }
-.contact{
-    height: 100vh;
-    width: 100vw;
-   
-}
+
 .c{
     position: relative;
     background-color: black;

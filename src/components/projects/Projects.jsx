@@ -1,12 +1,22 @@
 import React from 'react'
+import Card from './Card'
 
 function Projects(props) {
   return (
-    <>
-    <div className="projects_container" >
-        <h1>Project</h1>
+    <div className='proj_cont section ww'>
+      <div class="containers">
+        <div className="parent card1">
+          <Card/>
+        </div>
+        <div className="parent card2">
+          <Card/>
+        </div>
+        <div className="parent card3">
+          <Card/>
+        </div>
+    
     </div>
-    </>
+    </div>
   )
 }
 

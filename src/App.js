@@ -23,7 +23,7 @@ function App() {
       animation: t2,
       trigger: ".w",
       start: "center",
-      end: "+=4001",
+      end: "+=4000  ",
       scrub: true,
       pin: true
     });
@@ -31,16 +31,131 @@ function App() {
   }
   const scrollAnimation = () => {
     gsap.registerPlugin(ScrollTrigger);
+
     const t1 = gsap.timeline();
-    t1.to(".w", 1, { x: -window.innerWidth})
+    t1.to(".w", { x: -window.innerWidth *4, duration: 2 });
+  
     ScrollTrigger.create({
-      animation: t1,
-      trigger: ".w",
-      start: "top",
-      end: "+=4000",
+      trigger: '.w',
+      start: 'top',
+      end: `+=${window.innerWidth *4}`,
       scrub: true,
-      pin: true
+      pin: true,
+      animation: t1,
     });
+  
+
+    gsap.to(".Into",{
+      fontSize:'1vw',
+      top:'-16rem',
+      left:'90rem',
+      scrollTrigger:{
+        trigger: ".Into",
+      start: "top top",
+      end: "800",
+      scrub: 0.5
+      }
+    })
+
+    gsap.to(".strip",{
+      height:'6rem',
+      scrollTrigger:{
+        trigger: ".strip",
+      start: "center center",
+      end: "1002",
+      scrub: 0.5
+      }
+      
+    })
+    gsap.to('.about1 p',{
+      left:'0%',
+      top:'70%',
+      scrollTrigger:{
+        containerAnimation:t1,
+        trigger:'.about1 p',
+        start:'top bottom',
+        end:'850',
+        scrub:0.5
+
+      }
+    })
+    gsap.to('.about2 p',{
+      left:'0%',
+      top:'70%',
+      ease:'none',
+      scrollTrigger:{
+      containerAnimation:t1,
+        trigger:'.about1 p',
+        start:'top bottom',
+        end:'900',
+        scrub:0.5
+
+      }
+    })
+    gsap.to('.cartoon',{
+      left:'32%',
+      top:'20%',
+      scrollTrigger:{
+        containerAnimation:t1,
+        trigger:'.cartoon',
+        start:'top bottom',
+        end:'+=50',
+        scrub:0.5
+
+      }
+    })
+    gsap.to('.about_container h1',{
+      top:'30%',
+      scrollTrigger:{
+        containerAnimation:t1,
+        trigger:'.cartoon',
+        start:'top bottom',
+        end:'801',
+        scrub:0.5
+
+      }
+    })
+    gsap.to('.containerr',{
+      left:'378vw',
+      scrollTrigger:{
+        containerAnimation:t1,
+        trigger:'.containerr',
+        duration:10,
+        start:'top bottom',
+        end:'+=1201',
+        scrub:0.5
+
+      }
+    })
+    gsap.to('.social-icons',{
+      left:'398vw',
+      top:'-9rem',
+      scrollTrigger:{
+        containerAnimation:t1,
+        trigger:'.social-icons',
+        duration:10,
+        start:'top bottom',
+        end:'+=2000',
+        scrub:0.5
+
+      }
+    })
+    gsap.to('.social-icons i',{
+      color:"white",
+      scrollTrigger:{
+        containerAnimation:t1,
+        trigger:'.social-icons i',
+     
+        start:'top bottom',
+        end:'+=1000',
+        scrub:0.5
+
+      }
+    })
+
+  
+
+
   }; 
 
   useEffect(() => {
@@ -175,8 +290,10 @@ function Start(){
   </div>
 </div>
     <div className="w">
+      
         <Intro></Intro>
         <About></About>
+        <Projects></Projects>
         <Contact></Contact>
         </div>
    

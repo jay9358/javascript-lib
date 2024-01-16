@@ -1,0 +1,37 @@
+@font-face {
+    font-family: callheart;
+    src: url("./Callheart.ttf");
+}
+.c{
+    align-items: center;
+    
+}
+.contact_here{
+    padding-top: 5rem;
+    font-size: 4vw;
+    padding-left: 2rem;
+    color: rgb(255, 247, 12);
+    font-family: callheart;
+}
+.c_e{
+    padding-left: 4rem;
+    font-family: callheart;
+    color: rgba(255, 0, 0, 0.788);
+}
+.c_c{
+    width: 50%;
+}
+.c_s{
+    width: 50%;
+    display: flex   ;
+    justify-content: center;  
+}
+.c_s h1{
+    position: relative;
+    width: 35%;
+    left: 4rem;
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: callheart;
+    color: red;
+}

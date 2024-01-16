@@ -13,15 +13,17 @@
 .about_container h1{
     position: absolute;
     font-size: 10rem;
-    top: 30%;
-    color: rgb(103, 255, 130);
-    left: 10%;
+    top: 100%;
+    color: rgb(0, 255, 47);
+    left: 15%;
     
 } 
+
+
 .cartoon{
     position: absolute;
-    top: 20%;
-    left: 28%;
+    top: -80%;
+    left: 50%;
     
     
    
@@ -36,13 +38,31 @@
     height: 100vh;
     width: 2rem;
     background-color: black;
-    left: -3rem;
+    left: -2rem;
 }
 .about1{
     width: 50%;
+    display: flex;
+    justify-content: center;
     background-color: rgba(0, 200, 255, 0.567);
+}
+.about1 p{
+    position: relative;
+    top: 90%;
+    left: 15%;
+    width: 25rem;
+    font-size: 14px;
 }
 .about2{
     width: 50%;
     background-color: rgba(255, 132, 0, 0.337);
+    display: flex;
+    justify-content: center;
+}
+.about2 p{
+    position: relative;
+    top: 100%;
+    left: 20%;
+    width: 25rem;
+    font-size: 14px;
 }
