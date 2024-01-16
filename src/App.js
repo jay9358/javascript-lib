@@ -40,7 +40,7 @@ function App() {
       scrollTrigger:{
         trigger: ".Into",
       start: "top top",
-      end: "800",
+      end: "801",
       scrub: 0.5
       }
     })

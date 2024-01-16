@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./project.css"
 import Projects from "./Projects"
 function Project() {

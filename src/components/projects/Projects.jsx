@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card'
-
+import "./project.css"
 function Projects(props) {
   return (
     <div className='proj_cont section ww'>

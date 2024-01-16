@@ -1,4 +1,4 @@
-/* ---- reset ---- */ body{ height: 100vh;} canvas{ display: block; ; background-repeat: no-repeat; background-size: cover; background-image: url("https://img.freepik.com/free-vector/blurred-purple-background_1107-140.jpg");} /* ---- particles.js container ---- */
+/* ---- reset ---- */ body{ height: 100vh; overflow-x: hidden;} canvas{ display: block; ; background-repeat: no-repeat; background-size: cover; background-image: url("https://img.freepik.com/free-vector/blurred-purple-background_1107-140.jpg");} /* ---- particles.js container ---- */
 .w{
     display: flex;
     flex-wrap: nowrap;
