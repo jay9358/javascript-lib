@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Preloader.css';
 
 
 function Preloader() {
   
+
   return (
     <div className="preloader">
         <div class="spinner">
