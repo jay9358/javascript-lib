@@ -15,10 +15,11 @@ import Contact from './components/Contact/Contact';
 
 function App() {
   const [loader, setLoader] = useState(true);
-
+ 
   const scrollAnimation = () => {
-    gsap.registerPlugin(ScrollTrigger);
-
+   
+    
+    
     const t1 = gsap.timeline();
     t1.to(".w", { x: -window.innerWidth *4, duration: 2 });
   
@@ -146,6 +147,7 @@ function App() {
   }; 
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
   scrollAnimation();
     const timeout = setTimeout(() => {
       setLoader(false);
