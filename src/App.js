@@ -1,7 +1,7 @@
 
 import './App.css';
 import Intro from './components/Intro';
-import Nav from './components/Nav';
+
 import { useState,useEffect , useMemo} from 'react';
 import Preloader from './components/Preloader';
 import About from './components/about/about';
@@ -277,7 +277,7 @@ function Start(){
    <h1 className='mobile'>NOT AVAILABLE FOR MOBILE CURRENTLY</h1>
     <div className="w">
         
-        <Intro></Intro>
+        <Intro value={init}></Intro>
         <About></About>
         <Projects></Projects>
         <Contact></Contact>
