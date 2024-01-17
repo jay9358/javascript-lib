@@ -3,7 +3,9 @@
     display: flex;
     flex-wrap: nowrap;
 }
-
+.mobile{
+    display: none;
+}
 .c{
     position: relative;
     background-color: black;
@@ -11,4 +13,19 @@
     width: 100vw;
     display: flex;
     flex-shrink:0;
+}
+
+@media (max-width:500px) {
+    .w{
+        display: none;
+    }
+    .mobile{
+        position: relative;
+        display: block;
+        color: white;
+        top: 20rem;
+       
+        text-align: center;
+    }
+
 }

@@ -274,14 +274,9 @@ function Start(){
         particlesLoaded={particlesLoaded}
         options={options}
       />
-     <div className="Nav-container"  >
-  <div className="Navbar">
-    <Nav count={init}></Nav>
-
-  </div>
-</div>
+   <h1 className='mobile'>NOT AVAILABLE FOR MOBILE CURRENTLY</h1>
     <div className="w">
-      
+        
         <Intro></Intro>
         <About></About>
         <Projects></Projects>
